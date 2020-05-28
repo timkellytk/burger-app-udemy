@@ -12,21 +12,10 @@ import * as actionCreator from '../../store/actions/index';
 class BurgerBuilder extends Component {
   state = {
     purchasing: false,
-    loading: false,
-    error: false,
   };
 
   componentDidMount() {
-    /*     axios
-      .get('https://react-my-burger-fa2bc.firebaseio.com/ingredients.json')
-      .then((response) => {
-        this.setState({
-          ingredients: response.data,
-        });
-      })
-      .catch((error) => {
-        this.setState({ error: true });
-      }); */
+    this.props.onInitIngredients();
   }
 
   updatePurchaseState = (ingredients) => {
@@ -61,7 +50,7 @@ class BurgerBuilder extends Component {
     let orderSummary = null;
     let burger = <Spinner />;
 
-    if (this.state.error) {
+    if (this.props.error) {
       burger = <p>The ingredients can't be loaded</p>;
     }
 
@@ -89,10 +78,6 @@ class BurgerBuilder extends Component {
       );
     }
 
-    if (this.state.loading) {
-      orderSummary = <Spinner />;
-    }
-
     return (
       <React.Fragment>
         <Modal
@@ -111,6 +96,7 @@ const mapStateToProps = (state) => {
   return {
     ings: state.ingredients,
     price: state.totalPrice,
+    error: state.error,
   };
 };
 
@@ -120,6 +106,7 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(actionCreator.addIngredient(ingName)),
     onRemoveIngredient: (ingName) =>
       dispatch(actionCreator.removeIngredient(ingName)),
+    onInitIngredients: () => dispatch(actionCreator.initIngredients()),
   };
 };
 
