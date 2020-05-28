@@ -7,7 +7,7 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import axios from '../../axios-orders';
 import { connect } from 'react-redux';
-import * as ActiveType from '../../store/action';
+import * as actionCreator from '../../store/actions/index';
 
 class BurgerBuilder extends Component {
   state = {
@@ -117,12 +117,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onAddIngredient: (ingName) =>
-      dispatch({
-        type: ActiveType.ADD_INGREDIENT,
-        ingredientName: ingName,
-      }),
+      dispatch(actionCreator.addIngredient(ingName)),
     onRemoveIngredient: (ingName) =>
-      dispatch({ type: ActiveType.REMOVE_INGREDIENT, ingredientName: ingName }),
+      dispatch(actionCreator.removeIngredient(ingName)),
   };
 };
 
