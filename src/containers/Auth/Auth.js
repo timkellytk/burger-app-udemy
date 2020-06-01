@@ -6,7 +6,7 @@ import classes from './Auth.module.css';
 import * as actionCreators from '../../store/actions/index';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-import { updateObject } from '../../shared/utility';
+import { updateObject, checkValidity } from '../../shared/utility';
 
 class Auth extends Component {
   state = {
@@ -49,38 +49,11 @@ class Auth extends Component {
     }
   }
 
-  checkValidity = (value, rule) => {
-    let isValid = true;
-
-    if (!rule) {
-      return true;
-    }
-    if (rule.required) {
-      isValid = value.trim() !== '' && isValid;
-    }
-    if (rule.minLength) {
-      isValid = value.length >= rule.minLength && isValid;
-    }
-    if (rule.maxLength) {
-      isValid = value.length <= rule.maxLength && isValid;
-    }
-    if (rule.isEmail) {
-      const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-      isValid = pattern.test(value) && isValid;
-    }
-    if (rule.isNumeric) {
-      const pattern = /^\d+$/;
-      isValid = pattern.test(value) && isValid;
-    }
-
-    return isValid;
-  };
-
   inputChangedHandler = (event, controlName) => {
     const updatedControls = updateObject(this.state.controls, {
       [controlName]: updateObject(this.state.controls[controlName], {
         value: event.target.value,
-        valid: this.checkValidity(
+        valid: checkValidity(
           event.target.value,
           this.state.controls[controlName].validation
         ),
