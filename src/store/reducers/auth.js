@@ -27,7 +27,6 @@ const authFail = (state, action) => {
 };
 
 const authLogout = (state, action) => {
-  console.log('[authLogout] fired');
   return updateObject(state, {
     token: null,
     userId: null,

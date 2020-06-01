@@ -5,9 +5,15 @@ import Checkout from './containers/Checkout/Checkout';
 import Orders from './containers/Orders/Orders';
 import Auth from './containers/Auth/Auth';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
 import Logout from './containers/Auth/Logout/Logout';
+import * as actionCreators from './store/actions/index';
 
 class App extends Component {
+  componentDidMount() {
+    this.props.onTryAutoSignUp();
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -27,4 +33,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onTryAutoSignUp: () => dispatch(actionCreators.authCheckState()),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(App);
