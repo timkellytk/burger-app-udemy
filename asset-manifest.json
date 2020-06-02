@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/burger-app-udemy/static/css/main.dec72cbb.chunk.css",
+    "main.js": "/burger-app-udemy/static/js/main.6653f75b.chunk.js",
+    "main.js.map": "/burger-app-udemy/static/js/main.6653f75b.chunk.js.map",
+    "runtime-main.js": "/burger-app-udemy/static/js/runtime-main.869f8892.js",
+    "runtime-main.js.map": "/burger-app-udemy/static/js/runtime-main.869f8892.js.map",
+    "static/js/2.e54c7b81.chunk.js": "/burger-app-udemy/static/js/2.e54c7b81.chunk.js",
+    "static/js/2.e54c7b81.chunk.js.map": "/burger-app-udemy/static/js/2.e54c7b81.chunk.js.map",
+    "static/css/3.8187a38a.chunk.css": "/burger-app-udemy/static/css/3.8187a38a.chunk.css",
+    "static/js/3.f31b9d4b.chunk.js": "/burger-app-udemy/static/js/3.f31b9d4b.chunk.js",
+    "static/js/3.f31b9d4b.chunk.js.map": "/burger-app-udemy/static/js/3.f31b9d4b.chunk.js.map",
+    "static/css/4.e61d535d.chunk.css": "/burger-app-udemy/static/css/4.e61d535d.chunk.css",
+    "static/js/4.b7d671ab.chunk.js": "/burger-app-udemy/static/js/4.b7d671ab.chunk.js",
+    "static/js/4.b7d671ab.chunk.js.map": "/burger-app-udemy/static/js/4.b7d671ab.chunk.js.map",
+    "static/css/5.b4bed6bd.chunk.css": "/burger-app-udemy/static/css/5.b4bed6bd.chunk.css",
+    "static/js/5.db45b1c8.chunk.js": "/burger-app-udemy/static/js/5.db45b1c8.chunk.js",
+    "static/js/5.db45b1c8.chunk.js.map": "/burger-app-udemy/static/js/5.db45b1c8.chunk.js.map",
+    "index.html": "/burger-app-udemy/index.html",
+    "precache-manifest.ecbab1a01d481a2ee7c646f06e012187.js": "/burger-app-udemy/precache-manifest.ecbab1a01d481a2ee7c646f06e012187.js",
+    "service-worker.js": "/burger-app-udemy/service-worker.js",
+    "static/css/3.8187a38a.chunk.css.map": "/burger-app-udemy/static/css/3.8187a38a.chunk.css.map",
+    "static/css/4.e61d535d.chunk.css.map": "/burger-app-udemy/static/css/4.e61d535d.chunk.css.map",
+    "static/css/5.b4bed6bd.chunk.css.map": "/burger-app-udemy/static/css/5.b4bed6bd.chunk.css.map",
+    "static/css/main.dec72cbb.chunk.css.map": "/burger-app-udemy/static/css/main.dec72cbb.chunk.css.map",
+    "static/js/2.e54c7b81.chunk.js.LICENSE.txt": "/burger-app-udemy/static/js/2.e54c7b81.chunk.js.LICENSE.txt",
+    "static/media/original.png": "/burger-app-udemy/static/media/original.b8503d26.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.869f8892.js",
+    "static/js/2.e54c7b81.chunk.js",
+    "static/css/main.dec72cbb.chunk.css",
+    "static/js/main.6653f75b.chunk.js"
+  ]
+}
