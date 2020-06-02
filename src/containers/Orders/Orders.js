@@ -5,16 +5,17 @@ import { connect } from 'react-redux';
 import * as actionCreators from '../../store/actions/index';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
+import classes from './Orders.module.css';
+import Button from '../../components/UI/Button/Button';
 
 class Orders extends Component {
-  state = {
-    orders: [],
-    loading: true,
-  };
-
   componentDidMount() {
     this.props.onFetchOrders(this.props.token, this.props.userId);
   }
+
+  goToBurgerBuilder = () => {
+    this.props.history.push('/');
+  };
 
   render() {
     let orders = <Spinner />;
@@ -27,6 +28,18 @@ class Orders extends Component {
         />
       ));
     }
+    if (this.props.orders.length === 0) {
+      orders = (
+        <div className={classes.Orders}>
+          <h1>No orders</h1>
+          <p>Please go to the Burger Builder and order a burger</p>
+          <Button btnType="Success" clicked={this.goToBurgerBuilder}>
+            Go To Burger Builder
+          </Button>
+        </div>
+      );
+    }
+
     return <div>{orders}</div>;
   }
 }
