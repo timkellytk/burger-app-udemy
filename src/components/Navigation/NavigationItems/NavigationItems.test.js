@@ -5,16 +5,28 @@ import Adapter from 'enzyme-adapter-react-16';
 
 import NavigationItems from './NavigationItems';
 import NavigationItem from './NavigationItem/NavigationItem';
+import { waitForDomChange } from '@testing-library/react';
 
 configure({ adapter: new Adapter() });
 
 describe('<NavigationItems />', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<NavigationItems />);
+  });
+
   it('should render two instances of <NavigationItem /> if not authenticated', () => {
-    const wrapper = shallow(<NavigationItems />);
     expect(wrapper.find(NavigationItem)).toHaveLength(2);
   });
   it('should render three instances of <NavigationItem /> if authenticated', () => {
-    const wrapper = shallow(<NavigationItems isAuthenticated />);
+    wrapper.setProps({ isAuthenticated: true });
     expect(wrapper.find(NavigationItem)).toHaveLength(3);
+  });
+  it('should render three instances of <NavigationItem /> if authenticated', () => {
+    wrapper.setProps({ isAuthenticated: true });
+    expect(
+      wrapper.contains(<NavigationItem link="/logout">Logout</NavigationItem>)
+    ).toEqual(true);
   });
 });
