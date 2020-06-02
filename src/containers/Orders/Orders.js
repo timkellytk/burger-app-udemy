@@ -21,11 +21,23 @@ class Orders extends Component {
     let orders = <Spinner />;
     if (!this.props.loading) {
       orders = this.props.orders.map((order) => (
-        <Order
-          price={order.price}
-          ingredients={order.ingredients}
-          key={order.id}
-        />
+        <React.Fragment>
+          <div className={classes.Orders}>
+            <h1>Your Orders</h1>
+            <p>
+              A list of all the delicious burgers you have ordered with Tim
+              Kelly's React app
+            </p>
+            <Button btnType="Success" clicked={this.goToBurgerBuilder}>
+              Go To Burger Builder
+            </Button>
+          </div>
+          <Order
+            price={order.price}
+            ingredients={order.ingredients}
+            key={order.id}
+          />
+        </React.Fragment>
       ));
     }
     if (this.props.orders.length === 0) {
