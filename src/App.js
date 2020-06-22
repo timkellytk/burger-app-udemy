@@ -44,7 +44,7 @@ class App extends Component {
     }
 
     return (
-      <BrowserRouter basename="/burger-app-udemy/">
+      <BrowserRouter basename="/project-react-burger-app/">
         <div>
           <Layout>{routes}</Layout>
         </div>
