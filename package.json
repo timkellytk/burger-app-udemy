@@ -1,6 +1,6 @@
 {
-  "name": "burger-app-udemy",
-  "homepage": "http://timkellytk.github.io/burger-app-udemy",
+  "name": "project-react-burger-app",
+  "homepage": "http://timkellytk.github.io/project-react-burger-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
