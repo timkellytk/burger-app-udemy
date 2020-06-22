@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8d5afc38496cd77bf0c4ed8deaec396",
+    "revision": "e83f4e5cfaa4471155918e8e788ae57c",
     "url": "/burger-app-udemy/index.html"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/burger-app-udemy/static/css/5.ece780d1.chunk.css"
   },
   {
-    "revision": "186a5fcdfc39eea71756",
+    "revision": "7e8310d024b39f65e594",
     "url": "/burger-app-udemy/static/css/main.fb91487e.chunk.css"
   },
   {
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/burger-app-udemy/static/js/5.0ecd3b0c.chunk.js"
   },
   {
-    "revision": "186a5fcdfc39eea71756",
-    "url": "/burger-app-udemy/static/js/main.8339cf1c.chunk.js"
+    "revision": "7e8310d024b39f65e594",
+    "url": "/burger-app-udemy/static/js/main.7c794a8b.chunk.js"
   },
   {
     "revision": "de6759f77b6945c8ad35",

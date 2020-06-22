@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/burger-app-udemy/static/css/main.fb91487e.chunk.css",
-    "main.js": "/burger-app-udemy/static/js/main.8339cf1c.chunk.js",
-    "main.js.map": "/burger-app-udemy/static/js/main.8339cf1c.chunk.js.map",
+    "main.js": "/burger-app-udemy/static/js/main.7c794a8b.chunk.js",
+    "main.js.map": "/burger-app-udemy/static/js/main.7c794a8b.chunk.js.map",
     "runtime-main.js": "/burger-app-udemy/static/js/runtime-main.9716a11c.js",
     "runtime-main.js.map": "/burger-app-udemy/static/js/runtime-main.9716a11c.js.map",
     "static/js/2.e54c7b81.chunk.js": "/burger-app-udemy/static/js/2.e54c7b81.chunk.js",
@@ -17,7 +17,7 @@
     "static/js/5.0ecd3b0c.chunk.js": "/burger-app-udemy/static/js/5.0ecd3b0c.chunk.js",
     "static/js/5.0ecd3b0c.chunk.js.map": "/burger-app-udemy/static/js/5.0ecd3b0c.chunk.js.map",
     "index.html": "/burger-app-udemy/index.html",
-    "precache-manifest.632c807c1f078401f0d7143829001878.js": "/burger-app-udemy/precache-manifest.632c807c1f078401f0d7143829001878.js",
+    "precache-manifest.68992a3e825130d8217e6aba396da433.js": "/burger-app-udemy/precache-manifest.68992a3e825130d8217e6aba396da433.js",
     "service-worker.js": "/burger-app-udemy/service-worker.js",
     "static/css/3.8187a38a.chunk.css.map": "/burger-app-udemy/static/css/3.8187a38a.chunk.css.map",
     "static/css/4.e61d535d.chunk.css.map": "/burger-app-udemy/static/css/4.e61d535d.chunk.css.map",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.9716a11c.js",
     "static/js/2.e54c7b81.chunk.js",
     "static/css/main.fb91487e.chunk.css",
-    "static/js/main.8339cf1c.chunk.js"
+    "static/js/main.7c794a8b.chunk.js"
   ]
 }
