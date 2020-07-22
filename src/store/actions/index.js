@@ -7,9 +7,14 @@ export {
 } from './burgerBuilder';
 export {
   purchaseBurger,
+  purchaseBurgerStart,
+  purchaseBurgerSuccess,
+  purchaseBurgerFail,
   purchaseInit,
   fetchOrders,
   fetchOrdersStart,
+  fetchedOrdersSuccess,
+  fetchOrdersFail,
 } from './order';
 export {
   auth,
